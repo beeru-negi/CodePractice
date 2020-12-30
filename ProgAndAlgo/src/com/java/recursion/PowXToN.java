@@ -1,4 +1,4 @@
-package com.java.recursion;
+package src.com.java.recursion;
 
 public class PowXToN {
 
