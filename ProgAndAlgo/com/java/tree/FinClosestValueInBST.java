@@ -1,4 +1,4 @@
-package src.com.java.tree;
+package com.java.tree;
 
 /** Find Closest value in BST tree for a given target value. IE: if a a integer target is given than we have to find which node in tree is 
   closest to this given target integer**/
