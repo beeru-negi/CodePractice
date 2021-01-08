@@ -16,6 +16,7 @@ public class ProductSumInList {
 			return productSum(array, 1);
 	  }
 		
+
 		@SuppressWarnings("unchecked")
 		public static int productSum(List<Object> array, int level) {
 			
