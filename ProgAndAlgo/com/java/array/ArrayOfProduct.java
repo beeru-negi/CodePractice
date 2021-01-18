@@ -30,5 +30,25 @@ public class ArrayOfProduct {
 				}
 		    return result;
 		  }
+	  
+	  public int[] arrayOfProducts1(int[] array) {
+		    // Write your code here.
+				int totalProduct=1;
+				int [] result = new int[array.length];
+
+				for(int i=0; i < array.length; i++)
+				{ totalProduct=1;
+							for(int j=0; j < array.length; j++)
+							{
+								if(i==j)
+								{
+									continue;
+								}
+								totalProduct = totalProduct * array[j];
+							}
+							result[i] = totalProduct;
+				}
+		    return result;
+		  }
 
 }
