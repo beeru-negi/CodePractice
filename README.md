@@ -1,2 +1,2 @@
 # CodePractice
-Here i am adding day to day codign problem and exricise for coding interview. Also adding my past practice problems
+Here i am adding my day to day coding problems and exercise for coding interviews. Also adding my past practice problems
