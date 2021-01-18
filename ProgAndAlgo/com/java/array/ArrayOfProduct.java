@@ -3,7 +3,7 @@ package com.java.array;
 import java.util.Arrays;
 
 /*
- * Write a function that take a non empty array of integers and returns a array of same length , where each elements in the output array is equal of
+ * Algoexpert problem : Write a function that take a non empty array of integers and returns a array of same length , where each elements in the output array is equal of
  * of the product of every other number in the array.
  * Example : "array": [5, 1, 4, 2]. output - [8, 40, 10, 20].
  */
