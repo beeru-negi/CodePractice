@@ -1,5 +1,18 @@
 package com.java.array;
 
+import java.util.List;
+
+// A given integer array, print the elements diagonally. 
+/*
+ *array= { 
+ *			{ 1, 3, 6, 10 }, 
+ *			{ 2, 5, 9, 13 }, 
+ *			{ 4, 8, 12, 15 }, 
+ *			{ 7, 11, 14, 16 } 
+ *};
+ *
+ *Output- 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16
+ */
 public class PrintArrayDiagonally {
 
 	public static void main(String[] srg) {
@@ -7,6 +20,7 @@ public class PrintArrayDiagonally {
 		printDiagonally(arr);
 	}
 
+	
 	static void printDiagonally(int[][] arr) {
 
 		int n = arr[0].length;
