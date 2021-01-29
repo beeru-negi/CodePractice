@@ -1,10 +1,13 @@
 package com.java.array;
 
+
 import java.util.List;
+
+
 
 // A given integer array, print the elements diagonally. 
 /*
- *array= { 
+ *array= {
  *			{ 1, 3, 6, 10 }, 
  *			{ 2, 5, 9, 13 }, 
  *			{ 4, 8, 12, 15 }, 
