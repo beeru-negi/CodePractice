@@ -14,7 +14,7 @@ import java.util.List;
  * output should be [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
  *
  */
-public class PrintArrayElementsZigZag {
+public class PrintArrayElementsSpiral {
 	public static List<Integer> spiralTraverse(int[][] array) {
 	    // Write your code here.
 			List<Integer> spiral = new ArrayList<Integer>();
