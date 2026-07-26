@@ -1,5 +1,17 @@
 package com.java.tree.problems;
 
+/**
+ * Check if a Binary Search Tree is Balanced.
+ *
+ * <p>A BST is considered balanced if the difference between its maximum depth
+ * and minimum depth is at most 1. This is checked by recursively computing
+ * both the max depth (longest root-to-leaf path) and min depth (shortest
+ * root-to-leaf path) and comparing them.
+ *
+ * <p>Example: A balanced BST with nodes [20, 8, 22, 4, 12, 10, 14] → {@code true}.
+ *
+ * <p>Time Complexity: O(n). Space Complexity: O(h) where h is the tree height.
+ */
 public class BalancedBST {
 	public static void main(String[] str) {
 

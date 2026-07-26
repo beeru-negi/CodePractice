@@ -2,6 +2,18 @@ package com.java.string;
 
 import java.util.ArrayList;
 
+/**
+ * String Permutations.
+ *
+ * <p>Generates all unique permutations of the characters in a given string
+ * using recursive backtracking. Duplicate characters in the input are treated
+ * as distinct; characters already included in the current prefix are skipped
+ * to avoid identical permutations.
+ *
+ * <p>Example: {@code "abc"} → {@code ["abc", "acb", "bac", "bca", "cab", "cba"]}.
+ *
+ * <p>Time Complexity: O(n * n!). Space Complexity: O(n * n!) for the result list.
+ */
 public class StringPermutations {
 	public static void main(String[] str) {
 		String name = "bire";
