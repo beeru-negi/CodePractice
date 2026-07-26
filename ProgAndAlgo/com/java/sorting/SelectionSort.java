@@ -1,5 +1,16 @@
 package com.java.sorting;
 
+/**
+ * Selection Sort implementation.
+ *
+ * <p>Divides the array into a sorted and an unsorted region. On each iteration it
+ * selects the minimum element from the unsorted region and swaps it with the
+ * first element of that region, growing the sorted portion by one.
+ * An already-sorted flag skips the swap when no smaller element was found.
+ *
+ * <p>Time Complexity: O(n²) in all cases.
+ * Space Complexity: O(1) in-place.
+ */
 public class SelectionSort {
 	  public static int[] selectionSort(int[] array) {
 		    // Write your code here.

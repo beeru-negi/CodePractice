@@ -1,5 +1,17 @@
 package com.java.string.problems;
 
+/**
+ * Maximum Palindrome Length.
+ *
+ * <p>Finds the length of the longest palindromic substring in a given string
+ * using a brute-force approach: for every pair of equal characters, it checks
+ * whether the substring between them is a palindrome by comparing it with its
+ * reverse.
+ *
+ * <p>Example: {@code "zsyvysradhahdarcy"} contains {@code "adhahda"} → length 7.
+ *
+ * <p>Time Complexity: O(n³). Space Complexity: O(n).
+ */
 public class MaxPalindrome {
 	
 	public static void main(String[] str)

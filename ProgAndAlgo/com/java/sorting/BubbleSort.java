@@ -1,5 +1,15 @@
 package com.java.sorting;
 
+/**
+ * Bubble Sort implementation.
+ *
+ * <p>Repeatedly compares adjacent elements and swaps them if they are in the wrong order.
+ * After each full pass the largest unsorted element bubbles to its correct position.
+ * An early-exit flag stops the algorithm as soon as no swap occurs in a pass.
+ *
+ * <p>Time Complexity: O(n²) average/worst, O(n) best (already sorted).
+ * Space Complexity: O(1) in-place.
+ */
 public class BubbleSort {
 	 public static int[] bubbleSort(int[] array) {
 		    // Write your code here.

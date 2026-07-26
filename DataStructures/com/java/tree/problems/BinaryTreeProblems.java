@@ -1,6 +1,19 @@
 
 package com.java.tree.problems;
 
+/**
+ * Binary Tree Validation (BST property check).
+ *
+ * <p>Determines whether a given binary tree satisfies the Binary Search Tree
+ * property: for every node, all values in the left subtree must be less than
+ * the node's value, and all values in the right subtree must be greater.
+ * The check is performed recursively in a pre-order traversal.
+ *
+ * <p>Example: A tree with root 7 and the right child's right subtree containing 3
+ * (which violates BST order) → {@code false}.
+ *
+ * <p>Time Complexity: O(n). Space Complexity: O(h) where h is the tree height.
+ */
 public class BinaryTreeProblems {
 
 	public static void main( String [] str)

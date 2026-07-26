@@ -2,6 +2,18 @@ package com.java.string.problems;
 
 import java.util.Arrays;
 
+/**
+ * Remove Duplicate Characters from a String.
+ *
+ * <p>Removes all duplicate characters from a string in O(n) time, keeping only
+ * the first occurrence of each character. Uses a boolean lookup array of size
+ * 256 (ASCII) to track seen characters and writes unique ones to the front of
+ * the character array.
+ *
+ * <p>Example: {@code "birebbndra"} → {@code "birendra"}.
+ *
+ * <p>Time Complexity: O(n). Space Complexity: O(1) (fixed 256-entry array).
+ */
 public class RemoveDuplicte {
 
 	public static void main(String[] str)
