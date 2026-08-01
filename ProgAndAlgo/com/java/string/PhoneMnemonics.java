@@ -15,7 +15,7 @@ public class PhoneMnemonics {
 	}
 	public ArrayList<String> phoneNumberMnemonics(String phoneNumber) {
 	    // Write your code here.
-			ArrayList<String> mList = new ArrayList<String>();
+        ArrayList<String> mList = new ArrayList<>();
 			phoneNumberMnemonics(phoneNumber, "", 0, mList);
 			return mList;
 	  }
@@ -24,7 +24,7 @@ public class PhoneMnemonics {
 				if (index >= phoneNumber.length()) {
 						return ;
 				}
-				List<Character> vList = getValuesForDigit(Character.toString(phoneNumber.charAt(index)));
+            List<Character> vList = getValuesForDigit(phoneNumber.charAt(index));
 				for(Character c : vList)
 				{
 					 phoneNumberMnemonics(phoneNumber, menmStr+c, index+1, mList);			
@@ -36,20 +36,31 @@ public class PhoneMnemonics {
 				}
 			
 		}
-		
-		private List<Character> getValuesForDigit(String pDigit) {
-			List<Character>[] mValArray = new List[10];
-			mValArray[0] = new ArrayList<Character>(Arrays.asList('0'));
-			mValArray[1] = new ArrayList<Character>(Arrays.asList('1'));
-			mValArray[2] = new ArrayList<Character>(Arrays.asList('a', 'b', 'c'));
-			mValArray[3] = new ArrayList<Character>(Arrays.asList('d', 'e', 'f'));
-			mValArray[4] = new ArrayList<Character>(Arrays.asList('g', 'h', 'i'));
-			mValArray[5] = new ArrayList<Character>(Arrays.asList('j', 'k', 'l'));
-			mValArray[6] = new ArrayList<Character>(Arrays.asList('m', 'n', 'o'));
-			mValArray[7] = new ArrayList<Character>(Arrays.asList('p', 'q', 'r', 's'));
-			mValArray[8] = new ArrayList<Character>(Arrays.asList('t', 'u', 'v'));
-			mValArray[9] = new ArrayList<Character>(Arrays.asList('w', 'x', 'y', 'z'));
 
-			return mValArray[Integer.valueOf(pDigit)];
+    private List<Character> getValuesForDigit(char digit) {
+        switch (digit) {
+            case '0':
+                return Arrays.asList('0');
+            case '1':
+                return Arrays.asList('1');
+            case '2':
+                return Arrays.asList('a', 'b', 'c');
+            case '3':
+                return Arrays.asList('d', 'e', 'f');
+            case '4':
+                return Arrays.asList('g', 'h', 'i');
+            case '5':
+                return Arrays.asList('j', 'k', 'l');
+            case '6':
+                return Arrays.asList('m', 'n', 'o');
+            case '7':
+                return Arrays.asList('p', 'q', 'r', 's');
+            case '8':
+                return Arrays.asList('t', 'u', 'v');
+            case '9':
+                return Arrays.asList('w', 'x', 'y', 'z');
+            default:
+                throw new IllegalArgumentException("Unsupported digit: " + digit);
+        }
 		}
 }

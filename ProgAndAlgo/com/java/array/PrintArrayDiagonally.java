@@ -1,10 +1,6 @@
 package com.java.array;
 
 
-import java.util.List;
-
-
-
 // A given integer array, print the elements diagonally. 
 /*
  *array= {
@@ -27,7 +23,8 @@ public class PrintArrayDiagonally {
 	static void printDiagonally(int[][] arr) {
 
 		int n = arr[0].length;
-		int i = 0, j = 0;
+        int i;
+        int j;
 		int k = 1;
 		int m = 0;
 		int lim;
@@ -52,46 +49,6 @@ public class PrintArrayDiagonally {
 
 			while (i <= lim && j >= l) {
 				System.out.print(" " + arr[j][i] + " ");
-
-				i++;
-				j--;
-			}
-
-			k++;
-			m++;
-
-		}
-
-	}
-
-	static void printDiagonally1(int[][] arr) {
-
-		int n = arr[0].length;
-		int i = 0, j = 0;
-		int k = 1;
-		int m = 0;
-		int lim;
-		int l;
-
-		while (m < 2 * n - 1) {
-			if (m < n) {
-				lim = m;
-				i = 0;
-				j = lim;
-				l = 0;
-				k = 0;
-
-			} else {
-				// k = 1;
-				i = k;
-				lim = n - 1;
-				j = n - 1;
-				l = k;
-
-			}
-
-			while (i <= lim && j >= l) {
-				System.out.print(" " + arr[i][j] + " ");
 
 				i++;
 				j--;

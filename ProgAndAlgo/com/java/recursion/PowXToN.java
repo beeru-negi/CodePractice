@@ -12,13 +12,11 @@ public class PowXToN {
 	}
 
 	public static double myPow(double x, int n) {
-		double powerof10 = 0;
-
 		if (n == 0) {
 			return 1;
 		}
 
-		powerof10 = myPow(x, n / 2);
+        double powerof10 = myPow(x, n / 2);
 
 		if (n % 2 == 0.0) {
 			return powerof10 * powerof10;

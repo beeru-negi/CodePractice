@@ -1,7 +1,6 @@
 package com.java.array;
 
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.PriorityQueue;
 
 /* Given an array of integers. Perform some number k of operation. Each operation considering removing an elements from
@@ -15,7 +14,7 @@ public class MinSum {
 	{
 		int[] nums = new int[] {10,20,7};
 		int k=4;
-		PriorityQueue<Integer> pq = new PriorityQueue<Integer>(nums.length, (a,b)-> Integer.compare(b, a));
+        PriorityQueue<Integer> pq = new PriorityQueue<>(nums.length, (a, b) -> Integer.compare(b, a));
 		Arrays.stream(nums).forEach(a-> pq.add(a));
 		
 		for ( int i =0; i < k ; i++)

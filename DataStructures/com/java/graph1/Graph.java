@@ -1,6 +1,6 @@
 package com.java.graph1;
+
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
@@ -69,13 +69,13 @@ public class Graph
 		rootNode.visited=true;
 		while(!q.isEmpty())
 		{
-			Node n=(Node)q.remove();
+            Node n = (Node) q.poll();
 			Node child=null;
 			while((child=getUnvisitedChildNode(n))!=null)
 			{
 				child.visited=true;
 				printNode(child);
-				q.add(child);
+                q.offer(child);
 			}
 		}
 		//Clear visited property of nodes
