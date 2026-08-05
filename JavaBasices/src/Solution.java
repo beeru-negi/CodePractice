@@ -1,20 +1,19 @@
 package src;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.NoSuchElementException;
-import java.util.Optional;
-import java.util.TooManyListenersException;
+import java.util.*;
 import java.util.stream.Collectors;
 //Find the smallest positive integer that does not occur in a given sequence.
 public class Solution {
 	public static void main(String[] str) {
 		Solution s = new Solution();
-		int[] a = { -2,-4,1, 3, 6, 5,4, 1, 2 };
+		Integer[] a = { -2,-4,1, 3, 6, 5,4, 1, 2 };
 		System.out.print(s.solution1(a));
+
+		Arrays.sort(a, Collections.reverseOrder());
+		System.out.print("Sort reverse order: "+ Arrays.toString(a));
 	}
 	
-	public int solution1(int[] A) {
+	public int solution1(Integer[] A) {
 		// write your code in Java SE 8
 		Arrays.sort(A);
 		int min = A[0];
